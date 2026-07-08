@@ -85,9 +85,10 @@ abstract class BuildDaemonNativeLibsTask : DefaultTask() {
 
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.wire)
 }
+
+apply(plugin = "com.squareup.wire")
+apply(plugin = "org.jetbrains.kotlin.android")
 
 android {
     namespace = "be.mygod.vpnhotspot"
