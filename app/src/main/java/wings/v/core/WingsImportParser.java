@@ -36,9 +36,9 @@ import wings.v.proto.WingsvProto;
 )
 public final class WingsImportParser {
 
-    private static final Pattern LINK_PATTERN = Pattern.compile("wingsv://[A-Za-z0-9_\\-+/=]+");
+    private static final Pattern LINK_PATTERN = Pattern.compile("stavpn://[A-Za-z0-9_\\-+/=]+");
     private static final Pattern SUBSCRIPTION_URL_PATTERN = Pattern.compile("https?://[^\\s\"']+");
-    private static final String SCHEME_PREFIX = "wingsv://";
+    private static final String SCHEME_PREFIX = "stavpn://";
     private static final int CURRENT_VERSION = 1;
     private static final byte FORMAT_PROTOBUF_DEFLATE = 0x12;
 
@@ -597,7 +597,7 @@ public final class WingsImportParser {
     }
 
     /**
-     * Scans a subscription body for wingsv:// single-profile links and decodes
+     * Scans a subscription body for stavpn:// single-profile links and decodes
      * each into a concrete backend profile object (or objects, for a VK TURN
      * profile which carries an embedded WG / AWG transport), WITHOUT writing to any
      * store and WITHOUT touching global settings or the active profile. The body
@@ -624,7 +624,7 @@ public final class WingsImportParser {
                     result.add(entry);
                 }
             } catch (Exception ignored) {
-                // A single malformed wingsv:// link must not break the rest.
+                // A single malformed stavpn:// link must not break the rest.
             }
         }
         return result;
@@ -3546,7 +3546,7 @@ public final class WingsImportParser {
     }
 
     /**
-     * One backend profile decoded from a subscription wingsv:// link. For
+     * One backend profile decoded from a subscription stavpn:// link. For
      * WIREGUARD / AMNEZIAWG it carries the standalone transport profile. For
      * VK_TURN it carries the VkTurnProfile plus its embedded transport (exactly
      * one of wireGuardProfile / amneziaProfile is non-null); the VkTurnProfile's

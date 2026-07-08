@@ -484,7 +484,7 @@ public class MainActivity extends AppCompatActivity {
     private void launchQrScanner() {
         // QrScanActivity self-manages camera permission via its own launcher,
         // so we never request CAMERA on app start — only after the user taps this.
-        // No regex/prefix filter: WingsImportParser.parseFromText accepts wingsv://,
+        // No regex/prefix filter: WingsImportParser.parseFromText accepts stavpn://,
         // vless://, AmneziaWG quick-config text, and subscription URLs — let it judge.
         Intent intent = QrScanActivity.Companion.createIntent(this, getString(R.string.qr_scan_title));
         try {
@@ -958,7 +958,7 @@ public class MainActivity extends AppCompatActivity {
         if (TextUtils.isEmpty(rawData)) {
             return false;
         }
-        return rawData.startsWith("wingsv://") || rawData.startsWith("vless://");
+        return rawData.startsWith("stavpn://") || rawData.startsWith("vless://");
     }
 
     private void requestReconnectAfterImport(@Nullable String importedText) {

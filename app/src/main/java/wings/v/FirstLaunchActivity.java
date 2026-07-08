@@ -218,7 +218,7 @@ public class FirstLaunchActivity
         if (exitTransitionRunning) {
             return;
         }
-        // Imported a wingsv:// / vless:// / subscription / awg-quick — config is
+        // Imported a stavpn:// / vless:// / subscription / awg-quick — config is
         // already in prefs, no further setup needed. Finish onboarding.
         completeFirstLaunch();
     }

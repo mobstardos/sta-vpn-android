@@ -144,7 +144,7 @@ public final class XraySubscriptionUpdater {
                         profiles.put(XrayStore.getProfileStorageKey(profile), profile);
                     }
                 }
-                // Same body may also carry wingsv:// backend profile links (VK TURN
+                // Same body may also carry stavpn:// backend profile links (VK TURN
                 // / WireGuard / AmneziaWG). Dispatch them into their stores tagged
                 // with this subscription, replacing (and pruning) the previous set.
                 dispatchBackendProfiles(context, subscription, fetched.body);
@@ -310,7 +310,7 @@ public final class XraySubscriptionUpdater {
         return now - subscription.lastUpdatedAt >= refreshMinutes * MILLIS_PER_MINUTE;
     }
 
-    // Decodes wingsv:// backend profile links from the subscription body and
+    // Decodes stavpn:// backend profile links from the subscription body and
     // replaces this subscription's slice of each backend store (VK TURN /
     // WireGuard / AmneziaWG) with the fetched set. Transports are synced first so
     // each VK TURN profile's transport reference resolves to a stable stored id;

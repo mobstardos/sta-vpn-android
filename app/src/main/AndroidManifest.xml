@@ -357,11 +357,11 @@
             android:taskAffinity=""
             android:theme="@style/Theme.WINGSV.NoDisplay">
             <intent-filter>
-                <action android:name="wings.v.intent.action.START_TUNNEL" />
-                <action android:name="wings.v.intent.action.STOP_TUNNEL" />
-                <action android:name="wings.v.intent.action.SET_BACKEND" />
-                <action android:name="wings.v.intent.action.SET_BACKEND_XRAY" />
-                <action android:name="wings.v.intent.action.SET_BACKEND_VK" />
+                <action android:name="com.stavpn.android.intent.action.START_TUNNEL" />
+                <action android:name="com.stavpn.android.intent.action.STOP_TUNNEL" />
+                <action android:name="com.stavpn.android.intent.action.SET_BACKEND" />
+                <action android:name="com.stavpn.android.intent.action.SET_BACKEND_XRAY" />
+                <action android:name="com.stavpn.android.intent.action.SET_BACKEND_VK" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -559,7 +559,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="wings.v.intent.action.XPOSED_RECORD_EVENT" />
+                <action android:name="com.stavpn.android.intent.action.XPOSED_RECORD_EVENT" />
             </intent-filter>
         </receiver>
 

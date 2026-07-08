@@ -21,7 +21,7 @@ public final class AmneziaProfile {
     public final String title;
     public final String quickConfig;
     // Source subscription tag. Empty for manually added / imported profiles; set
-    // when this profile was dispatched from a 3x-ui subscription wingsv:// link
+    // when this profile was dispatched from a 3x-ui subscription stavpn:// link
     // (either standalone AmneziaWG or the AWG transport of a VK TURN profile). Not
     // part of stableDedupKey, so the same config can be reused across sources.
     public final String subscriptionId;

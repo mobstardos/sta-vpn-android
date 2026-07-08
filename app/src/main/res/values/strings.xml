@@ -26,7 +26,7 @@
     <string name="first_launch_continue">Start using</string>
     <string name="first_launch_skip">Skip</string>
     <string name="first_launch_page_welcome_badge">Welcome</string>
-    <string name="first_launch_page_welcome_title">WINGS V</string>
+    <string name="first_launch_page_welcome_title">STA-VPN</string>
     <string name="first_launch_page_welcome_subtitle">Welcome to a unified client for Xray and VK TURN, created for fighting Russian Internet censorship, including whitelists</string>
     <string name="first_launch_connection_title">How do you want to connect?</string>
     <string name="first_launch_connection_description">Let\'s get you back to the Internet freedom!</string>
@@ -36,8 +36,8 @@
     <string name="first_launch_connection_paste_clipboard">Paste from clipboard</string>
     <string name="first_launch_connection_scan_qr">Scan QR code</string>
     <string name="first_launch_vk_turn_title">VK TURN settings</string>
-    <string name="first_launch_vk_turn_description">Fill in the connection parameters or import a ready WINGSV link</string>
-    <string name="first_launch_vk_turn_import">Import wingsv://</string>
+    <string name="first_launch_vk_turn_description">Fill in the connection parameters or import a ready STAVPN link</string>
+    <string name="first_launch_vk_turn_import">Import stavpn://</string>
     <string name="first_launch_vk_turn_endpoint">Endpoint</string>
     <string name="first_launch_vk_turn_vk_link">VK Link</string>
     <string name="first_launch_vk_turn_threads">Threads</string>
@@ -52,17 +52,17 @@
     <string name="first_launch_vk_turn_wg_public_key">Public key</string>
     <string name="first_launch_vk_turn_wg_preshared_key">Preshared key (PSK)</string>
     <string name="first_launch_vk_turn_wg_allowed_ips">Allowed IPs</string>
-    <string name="first_launch_vk_turn_import_invalid">No valid VK TURN wingsv:// link found in clipboard</string>
+    <string name="first_launch_vk_turn_import_invalid">No valid VK TURN stavpn:// link found in clipboard</string>
     <string name="first_launch_vk_turn_field_required">Required field</string>
     <string name="first_launch_vk_turn_field_number_error">Enter a number greater than zero</string>
     <string name="first_launch_vk_turn_endpoint_error">Enter endpoint as domain:port or IP:port</string>
     <string name="first_launch_vk_turn_validation_error">Check the VK TURN fields</string>
     <string name="first_launch_xray_title">Xray settings</string>
     <string name="first_launch_xray_description">Import a VLESS profile or set up basic Xray parameters</string>
-    <string name="first_launch_xray_import_wingsv">Import wingsv://</string>
+    <string name="first_launch_xray_import_STAVPN">Import stavpn://</string>
     <string name="first_launch_xray_import_vless">Import vless://</string>
     <string name="first_launch_xray_import_subscription">Import subscription URL</string>
-    <string name="first_launch_xray_import_wingsv_invalid">No valid Xray wingsv:// link found in clipboard</string>
+    <string name="first_launch_xray_import_wingsv_invalid">No valid Xray stavpn:// link found in clipboard</string>
     <string name="first_launch_xray_import_vless_invalid">No valid vless:// link found in clipboard</string>
     <string name="first_launch_xray_import_subscription_invalid">No valid subscription URL found in clipboard</string>
     <string name="first_launch_auto_search_settings_title">Auto search</string>
@@ -112,9 +112,9 @@
     <string name="add_from_clipboard">Add from clipboard</string>
     <string name="copy_configuration">Copy configuration</string>
     <string name="home_description">TURN + WireGuard</string>
-    <string name="clipboard_empty">No WINGSV or VLESS link in clipboard</string>
+    <string name="clipboard_empty">No STAVPN or VLESS link in clipboard</string>
     <string name="clipboard_import_success">Settings imported</string>
-    <string name="clipboard_import_invalid">Failed to parse wingsv://, vless:// or subscription URL</string>
+    <string name="clipboard_import_invalid">Failed to parse stavpn://, vless:// or subscription URL</string>
     <string name="vk_turn_user_dns_title">Custom DNS resolvers</string>
     <string name="vk_turn_user_dns_summary">Add custom DNS in front of the built-in list (Yandex → Google → Cloudflare). One per line.</string>
     <string name="vk_turn_user_dns_dialog_message">Formats:\n• https://dns.example/dns-query — DoH\n• udp://77.88.8.8:53 — plain UDP\n• 77.88.8.8 — same, plain UDP/53\nEntries that don\'t respond on bootstrap are dropped; the built-in list remains as fallback.</string>
@@ -145,7 +145,7 @@
     <string name="import_confirm_apply">Import</string>
     <string name="import_confirm_cancelled">Import cancelled</string>
     <string name="guardian_import_avatar_content_description">Administrator avatar</string>
-    <string name="guardian_import_description">%1$s wants to connect your client to the WINGS V management panel</string>
+    <string name="guardian_import_description">%1$s wants to connect your client to the STA-VPN management panel</string>
     <string name="clipboard_copy_success">Configuration copied to clipboard</string>
     <string name="clipboard_copy_failed">Failed to build configuration</string>
     <string name="action_delete">Delete</string>
@@ -157,7 +157,7 @@
     <string name="shortcut_set_backend_xray_long">Switch backend to Xray</string>
     <string name="shortcut_set_backend_vk_short">VK</string>
     <string name="shortcut_set_backend_vk_long">Switch backend to VK TURN + WireGuard</string>
-    <string name="qs_tile_tunnel_label">WINGS V</string>
+    <string name="qs_tile_tunnel_label">STA-VPN</string>
     <string name="qs_tile_status_on">✅</string>
     <string name="qs_tile_status_off">❌</string>
     <string name="qs_tile_status_connecting">📶</string>
@@ -253,12 +253,12 @@
     <string name="about_updates_cancel_download">Cancel download</string>
     <string name="about_updates_install_downloaded">Install downloaded APK</string>
     <string name="about_updates_download_ready">Ready to install</string>
-    <string name="about_updates_install_permission_hint">Allow installation from unknown sources for WINGS V</string>
+    <string name="about_updates_install_permission_hint">Allow installation from unknown sources for STA-VPN</string>
     <string name="about_updates_install_failed">Failed to open APK installer</string>
     <string name="about_updates_install_missing">Downloaded APK not found</string>
     <string name="about_updates_permission_denied">Install permission not granted</string>
     <string name="update_notification_channel_name">App updates</string>
-    <string name="update_notification_channel_description">Notifications about new WINGS V versions</string>
+    <string name="update_notification_channel_description">Notifications about new STA-VPN versions</string>
     <string name="update_notification_available_title">Update %1$s available</string>
     <string name="update_notification_available_text">Open the "About" section to download and install the new version.</string>
     <string name="update_notification_downloaded_title">Update %1$s ready to install</string>
@@ -266,15 +266,15 @@
     <string name="about_developers_section">Developers</string>
     <string name="about_sources_section">Source code and licenses</string>
     <string name="about_telegram_section">Telegram</string>
-    <string name="about_telegram_chat_title">WINGS V Telegram chat</string>
+    <string name="about_telegram_chat_title">STA-VPN Telegram chat</string>
     <string name="about_telegram_chat_summary">Discussion, suggestions and setup help</string>
     <string name="about_special_thanks_section">Special thanks to</string>
     <string name="about_source_code_title">Source code</string>
-    <string name="about_source_code_summary">github.com/WINGS-N/WINGSV</string>
+    <string name="about_source_code_summary">github.com/mobstardos/sta-vpn-android</string>
     <string name="about_licenses_title">Open-source licenses</string>
     <string name="about_licenses_summary">Main open-source components of the app</string>
-    <string name="about_dev_wings_n_title">WINGS-N</string>
-    <string name="about_dev_wings_n_summary">Yeah we never felt so young…</string>
+    <string name="about_dev_wings_n_title">STA-VPN</string>
+    <string name="about_dev_wings_n_summary">Personal VPN client</string>
     <!-- SPECIAL THANKS TO -->
     <string name="about_special_mygod_title">Mygod</string>
     <string name="about_special_mygod_summary">VPNHotspot, librootkotlinx and root tethering architecture</string>
@@ -644,7 +644,7 @@
     <string name="active_probing_targets_add_button">Add site</string>
     <string name="active_probing_targets_add_dialog_title">Add site</string>
     <string name="active_probing_targets_edit_dialog_title">Edit site</string>
-    <string name="active_probing_targets_input_hint">https://github.com/WINGS-N/WINGSV</string>
+    <string name="active_probing_targets_input_hint">https://github.com/WINGS-N/STAVPN</string>
     <string name="active_probing_targets_invalid_url">A valid http:// or https:// URL is required</string>
     <string name="active_probing_targets_delete_title">Delete site?</string>
     <string name="active_probing_targets_delete_message">Site %1$s will be removed from the check list</string>
@@ -705,10 +705,10 @@
     <string name="xray_profiles_selected_count">Selected: %1$d</string>
     <string name="xray_profiles_selection_summary">Select an action for the checked profiles</string>
     <string name="xray_profiles_share_action">Share</string>
-    <string name="xray_profiles_share_summary">Export in wingsv:// or vless:// format</string>
+    <string name="xray_profiles_share_summary">Export in stavpn:// or vless:// format</string>
     <string name="xray_profiles_share_chooser">Share profiles</string>
     <string name="xray_profiles_share_format_chooser">Export format</string>
-    <string name="xray_profiles_share_format_wingsv">wingsv://</string>
+    <string name="xray_profiles_share_format_STAVPN">stavpn://</string>
     <string name="xray_profiles_share_format_vless">vless://</string>
     <string name="xray_profile_long_press_select">Select</string>
     <string name="xray_profile_long_press_edit_json">Edit JSON</string>
@@ -765,7 +765,7 @@
     <string name="backend_profiles_rename_title">Rename profile</string>
     <string name="backend_profiles_rename_done">Profile renamed</string>
     <string name="backend_profiles_share_failed">Failed to build a share link for this profile</string>
-    <string name="backend_profile_share_choice_link">Share link (wingsv://)</string>
+    <string name="backend_profile_share_choice_link">Share link (stavpn://)</string>
     <string name="backend_profile_share_choice_text">Share config text</string>
     <string name="backend_profiles_edit_stub">Editing for this backend is coming soon</string>
     <string name="backend_profiles_delete_confirm_title">Delete profile</string>
@@ -980,12 +980,12 @@
     <string name="vk_links_autolink_success">Added new VK link</string>
     <string name="vk_links_autolink_failed">Failed to generate VK link</string>
     <string name="vk_links_autolink_prompt_title">Generate a VK link?</string>
-    <string name="vk_links_autolink_prompt_message">The list is empty. WINGS V can sign you into VK and create a call link automatically. Continue?</string>
+    <string name="vk_links_autolink_prompt_message">The list is empty. STA-VPN can sign you into VK and create a call link automatically. Continue?</string>
     <string name="vk_links_autolink_prompt_yes">Sign in &amp; create</string>
     <string name="vk_links_autolink_prompt_no">Add manually</string>
     <string name="vk_oauth_title">VK sign-in</string>
     <string name="vk_oauth_headline">VK ID authorization</string>
-    <string name="vk_oauth_subtitle">After signing in, WINGS V will create one VK call and add its link to your list.</string>
+    <string name="vk_oauth_subtitle">After signing in, STA-VPN will create one VK call and add its link to your list.</string>
     <string name="vk_oauth_status_loading">Loading VK…</string>
     <string name="vk_oauth_status_waiting">Waiting</string>
     <string name="vk_oauth_status_failed">Page failed to load</string>
@@ -1089,7 +1089,7 @@
     <string name="notification_item_dtls_heartbeat">Time since DTLS heartbeat</string>
     <string name="ui_drag_handle">Reorder</string>
     <string name="settings_theme_picker_title">App appearance</string>
-    <string name="settings_theme_picker_summary">Choose the WINGS V appearance</string>
+    <string name="settings_theme_picker_summary">Choose the STA-VPN appearance</string>
     <string name="theme_mode_system">System</string>
     <string name="theme_mode_system_summary">Follow the device light or dark theme</string>
     <string name="theme_mode_dark">Dark</string>
@@ -1106,7 +1106,7 @@
     <string name="guardian_settings_summary_not_configured">Not configured</string>
     <string name="guardian_settings_summary_disconnected">No connection to the panel</string>
     <string name="guardian_settings_summary_connected">Connected to %1$s</string>
-    <string name="guardian_warning_text">The owner of the panel will be able to fully manage this WINGS V client: change any settings, view all logs, and enable or disable the connection. Continue?</string>
+    <string name="guardian_warning_text">The owner of the panel will be able to fully manage this STA-VPN client: change any settings, view all logs, and enable or disable the connection. Continue?</string>
     <string name="guardian_revoke_warning">After unlinking, the panel will lose control of this device. Continue?</string>
     <string name="guardian_pref_master_title">Guardian</string>
     <string name="guardian_pref_master_summary_on">Accept commands from the panel</string>
@@ -1136,7 +1136,7 @@
     <string name="guardian_pref_log_readonly_summary">Managed by the guardian</string>
     <string name="guardian_pref_revoke_summary">Removes the token from this device</string>
     <string name="guardian_notification_channel">Guardian</string>
-    <string name="guardian_notification_title">WINGS V — guardian</string>
+    <string name="guardian_notification_title">STA-VPN — guardian</string>
     <string name="guardian_notification_connecting">Connecting to panel…</string>
     <string name="guardian_notification_connected">Connected to %1$s</string>
     <string name="guardian_notification_disconnected">No connection to the panel</string>
@@ -1149,7 +1149,7 @@
     <string name="sharing_subtitle">VPN sharing lets you forward the VPN connection to other devices without installing any third-party software on them</string>
     <string name="sharing_root_mode_required">Enable root features in settings to route system tethering through the VPN</string>
     <string name="sharing_write_settings_required">Allow changing system settings to manage system tethering on this device</string>
-    <string name="sharing_write_settings_request">Open the system screen and allow changing system settings for WINGS V</string>
+    <string name="sharing_write_settings_request">Open the system screen and allow changing system settings for STA-VPN</string>
     <string name="sharing_changes_hint">Routing changes take effect after reconnect or via "Re-apply routing rules"</string>
     <string name="sharing_busy">Applying change…</string>
     <string name="sharing_target_settings_section">Parameters</string>
@@ -1357,7 +1357,7 @@
 
     <!-- Settings export -->
     <string name="settings_export_title">Settings export</string>
-    <string name="settings_export_summary">Copy a wingsv:// link with the selected settings</string>
+    <string name="settings_export_summary">Copy a stavpn:// link with the selected settings</string>
     <string name="settings_export_category">What to export</string>
     <string name="settings_export_all_title">Export all settings</string>
     <string name="settings_export_all_summary">All proto app settings, subscriptions and routing without profiles from subscriptions</string>
@@ -1377,10 +1377,10 @@
     <string name="settings_export_xposed_summary">Module toggles, hook modes, lists of target and hidden VPN apps</string>
     <string name="settings_export_app_routing_bypass_title">Export bypass apps</string>
     <string name="settings_export_app_routing_bypass_summary">Only the list of apps selected for VPN bypass</string>
-    <string name="settings_export_clip_label">WINGSV settings</string>
+    <string name="settings_export_clip_label">STAVPN settings</string>
     <string name="settings_export_done">Link copied</string>
     <string name="settings_export_failed">Failed to export settings</string>
-    <string name="settings_export_telegram_markdown_warning">Sending this data over Telegram will corrupt it because the messenger auto-applies markdown formatting. To keep the wingsv:// link intact in Telegram, add ``` on the line before the wingsv:// line and ``` on the line after it.</string>
+    <string name="settings_export_telegram_markdown_warning">Sending this data over Telegram will corrupt it because the messenger auto-applies markdown formatting. To keep the stavpn:// link intact in Telegram, add ``` on the line before the stavpn:// line and ``` on the line after it.</string>
 
     <!-- Auto Search -->
     <string name="auto_search_title">Auto search</string>
@@ -1521,9 +1521,9 @@
     <string name="import_summary_label_mode">Mode</string>
     <string name="import_summary_mode_only_apps">Only these apps</string>
     <string name="import_summary_label_packages">Packages</string>
-    <string name="wings_import_link_not_found">WINGSV link not found</string>
-    <string name="wings_import_payload_empty">WINGSV payload is empty</string>
-    <string name="wings_import_link_unsupported_format">Unsupported WINGSV link format</string>
+    <string name="wings_import_link_not_found">STAVPN link not found</string>
+    <string name="wings_import_payload_empty">STAVPN payload is empty</string>
+    <string name="wings_import_link_unsupported_format">Unsupported STAVPN link format</string>
     <string name="wings_import_ver_missing">ver is missing or invalid</string>
     <string name="wings_import_type_unsupported">Supported types: vk/xray/amneziawg/wb_stream/all/app_routing/xray_routing</string>
     <string name="wings_import_payload_inflate_failed">Failed to decompress payload</string>

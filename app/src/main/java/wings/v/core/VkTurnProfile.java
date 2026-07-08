@@ -56,7 +56,7 @@ public final class VkTurnProfile {
     public final String turnPort;
     // Source subscription tag. Empty for manually added / imported profiles; set
     // when this profile was dispatched from a 3x-ui subscription that carried a
-    // wingsv:// link. Not part of stableDedupKey (dedup stays server-identity
+    // stavpn:// link. Not part of stableDedupKey (dedup stays server-identity
     // based), so the same server can be reused across subscription and manual.
     public final String subscriptionId;
     public final String subscriptionTitle;

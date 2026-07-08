@@ -1,13 +1,13 @@
 <resources>
-    <style name="Theme.WINGSV" parent="OneUITheme">
+    <style name="Theme.STAVPN" parent="OneUITheme">
         <item name="android:fontFamily">@font/samsungone</item>
         <item name="fontFamily">@font/samsungone</item>
     </style>
-    <style name="Theme.WINGSV.NoDisplay" parent="@android:style/Theme.NoDisplay" />
+    <style name="Theme.STAVPN.NoDisplay" parent="@android:style/Theme.NoDisplay" />
 
     <!-- Full-screen, no app-bar theme for the OneUI QR scanner activity. The activity
          builds its own UI programmatically and handles edge-to-edge insets itself. -->
-    <style name="Theme.WINGSV.QrScan" parent="Theme.WINGSV">
+    <style name="Theme.STAVPN.QrScan" parent="Theme.STAVPN">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">false</item>

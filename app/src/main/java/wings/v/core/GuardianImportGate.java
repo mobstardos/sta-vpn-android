@@ -8,7 +8,7 @@ import wings.v.R;
 import wings.v.WarningConfirmActivity;
 
 /**
- * Single source of truth for the 5-second confirmation a wingsv:// import
+ * Single source of truth for the 5-second confirmation a stavpn:// import
  * needs when it carries a Guardian block. Applied consistently across the
  * main-screen import flow and the first-launch fragments — there is no other
  * gate that catches a Guardian-bearing config.

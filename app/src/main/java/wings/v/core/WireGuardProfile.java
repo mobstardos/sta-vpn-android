@@ -29,7 +29,7 @@ public final class WireGuardProfile {
     public final String allowedIps;
     public final String endpoint;
     // Source subscription tag. Empty for manually added / imported profiles; set
-    // when this profile was dispatched from a 3x-ui subscription wingsv:// link
+    // when this profile was dispatched from a 3x-ui subscription stavpn:// link
     // (either standalone WireGuard or the WG transport of a VK TURN profile). Not
     // part of stableDedupKey, so the same server can be reused across sources.
     public final String subscriptionId;

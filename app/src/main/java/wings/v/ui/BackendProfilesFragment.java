@@ -64,7 +64,7 @@ import wings.v.databinding.ItemBackendProfileEntryBinding;
  * For Xray the existing ProfilesFragment is embedded unchanged. For WireGuard,
  * AmneziaWG and VK TURN a simple list backed by the matching per-profile store is
  * rendered with select/favorite/stats/delete-with-cascade-modal, sharing
- * (wingsv:// link, plus raw wg-quick / awg-quick text for WG / AWG), editing and
+ * (stavpn:// link, plus raw wg-quick / awg-quick text for WG / AWG), editing and
  * an import entry.
  */
 @SuppressWarnings(
@@ -1161,9 +1161,9 @@ public class BackendProfilesFragment extends Fragment {
     }
 
     // Per-backend sharing, mirroring the Xray share flow (proto+deflate+base64
-    // wingsv:// link via the ACTION_SEND share sheet). WG / AWG additionally offer
+    // stavpn:// link via the ACTION_SEND share sheet). WG / AWG additionally offer
     // sharing the raw wg-quick / awg-quick TEXT, which is portable to other
-    // clients. VK TURN offers only the wingsv:// link (the layered endpoint is not
+    // clients. VK TURN offers only the stavpn:// link (the layered endpoint is not
     // meaningful as raw text), and the link embeds the referenced transport so it
     // reconstructs on a device where the transport id does not exist.
     private void shareProfile(BackendType backendType, SimpleProfile profile) {
