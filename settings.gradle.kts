@@ -52,7 +52,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "WINGS V"
+rootProject.name = "STA-VPN"
 include(":app")
 include(":vpnhotspot:bridge")
 include(":vpnhotspot:sharing-bridge")

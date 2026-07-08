@@ -93,7 +93,7 @@ fun parseVersionSpec(versionSpec: String?, defaultVersionName: String, defaultVe
     return versionName to versionCode
 }
 
-val defaultAppVersionName = "4.10.0"
+val defaultAppVersionName = "1.0.0"
 val defaultAppVersionCode = versionCodeFromSemanticVersion(defaultAppVersionName)
 val configuredAppVersionSpec = providers.gradleProperty("ver").orNull
 require(configuredAppVersionSpec == null || Regex("""[^/\s]+(?:/\d+)?""").matches(configuredAppVersionSpec)) {
@@ -567,7 +567,7 @@ pmd {
 }
 
 android {
-    namespace = "wings.v"
+    namespace = "com.stavpn.android"
     compileSdk = 37
 
     installation {
@@ -579,7 +579,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "wings.v"
+        applicationId = "com.stavpn.android"
         minSdk = 26
         targetSdk = 36
         versionCode = configuredAppVersionCode
