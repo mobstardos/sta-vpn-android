@@ -38,7 +38,7 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:enableOnBackInvokedCallback="true"
-        android:theme="@style/Theme.WINGSV"
+        android:theme="@style/Theme.STAVPN"
         tools:targetApi="34">
 
         <meta-data
@@ -47,11 +47,11 @@
 
         <meta-data
             android:name="theming-meta"
-            android:value="theming_meta_wingsv" />
+            android:value="theming_meta_stavpn" />
 
         <meta-data
             android:name="theming-meta-xml"
-            android:value="@xml/theming_meta_wingsv" />
+            android:value="@xml/theming_meta_stavpn" />
 
         <meta-data
             android:name="xposedmodule"
@@ -82,25 +82,25 @@
         <activity
             android:name=".FirstLaunchActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV"
+            android:theme="@style/Theme.STAVPN"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".ProxyLogsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".CaptchaBrowserActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".VkOAuthActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".VkAuthBrowserActivity"
@@ -108,201 +108,201 @@
             android:launchMode="singleInstance"
             android:taskAffinity=":vkAuth"
             android:excludeFromRecents="true"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".WarningConfirmActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".OpenSourceLicensesActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".AboutAppActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".SharingTargetSettingsActivity"
             android:exported="false"
             android:process=":tunnel"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".SharingStatsActivity"
             android:exported="false"
             android:process=":tunnel"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".SharingClientDetailActivity"
             android:exported="false"
             android:process=":tunnel"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".SubscriptionsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".VkLinksActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".SubscriptionHwidSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".SubscriptionUpdateSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XraySettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".ExportSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".ThemeSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".UiSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".NavbarSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".NotificationSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".VkTurnSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".WbStreamSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".RootInterfaceSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XrayRoutingSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XrayRoutingRulesActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XrayProfileEditorActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV"
+            android:theme="@style/Theme.STAVPN"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".BackendProfileEditorActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV"
+            android:theme="@style/Theme.STAVPN"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".VkTurnProfileEditorActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV"
+            android:theme="@style/Theme.STAVPN"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".ActiveProbingSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".AutoSearchActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".ByeDpiSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XposedSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XposedAppsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XposedRequestHistoryActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".XposedRequestHistoryDetailsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".ByeDpiTargetsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".ByeDpiStrategyTestActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".ActiveProbingTargetsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name=".AmneziaSettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.WINGSV" />
+            android:theme="@style/Theme.STAVPN" />
 
         <activity
             android:name="dev.oneuiproject.oneui.qr.app.QrScanActivity"
             android:exported="false"
             android:label="@string/qr_scan_title"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:theme="@style/Theme.WINGSV.QrScan" />
+            android:theme="@style/Theme.STAVPN.QrScan" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.WINGSV">
+            android:theme="@style/Theme.STAVPN">
             <meta-data
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
@@ -321,7 +321,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="wingsv" />
+                <data android:scheme="stavpn" />
             </intent-filter>
 
             <intent-filter>
@@ -355,7 +355,7 @@
             android:launchMode="singleTop"
             android:noHistory="true"
             android:taskAffinity=""
-            android:theme="@style/Theme.WINGSV.NoDisplay">
+            android:theme="@style/Theme.STAVPN.NoDisplay">
             <intent-filter>
                 <action android:name="com.stavpn.android.intent.action.START_TUNNEL" />
                 <action android:name="com.stavpn.android.intent.action.STOP_TUNNEL" />
