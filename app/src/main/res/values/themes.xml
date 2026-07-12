@@ -1,27 +1,18 @@
 <resources>
-    <style name="Theme.STAVPN" parent="OneUITheme">
-        <item name="android:fontFamily">@font/samsungone</item>
-        <item name="fontFamily">@font/samsungone</item>
-    </style>
+    <style name="Theme.STAVPN" parent="Theme.Material3.DayNight.NoActionBar" />
+
     <style name="Theme.STAVPN.NoDisplay" parent="@android:style/Theme.NoDisplay" />
 
-    <!-- Full-screen, no app-bar theme for the OneUI QR scanner activity. The activity
-         builds its own UI programmatically and handles edge-to-edge insets itself. -->
     <style name="Theme.STAVPN.QrScan" parent="Theme.STAVPN">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">false</item>
     </style>
 
-    <style name="Theme.AppCompat.PickerDialog" parent="Theme.AppCompat.Dialog.Alert" />
-
-    <style name="Theme.AppCompat.Light.PickerDialog" parent="Theme.AppCompat.Light.Dialog.Alert" />
-
+    <style name="Theme.AppCompat.PickerDialog" parent="ThemeOverlay.Material3.Dialog.Alert" />
+    <style name="Theme.AppCompat.Light.PickerDialog" parent="ThemeOverlay.Material3.Dialog.Alert" />
     <style name="Theme.AppCompat.PickerDialog.TimePicker" parent="Theme.AppCompat.PickerDialog" />
-
     <style name="Theme.AppCompat.Light.PickerDialog.TimePicker" parent="Theme.AppCompat.Light.PickerDialog" />
-
     <style name="Theme.AppCompat.PickerDialog.DatePicker" parent="Theme.AppCompat.PickerDialog" />
-
     <style name="Theme.AppCompat.Light.PickerDialog.DatePicker" parent="Theme.AppCompat.Light.PickerDialog" />
 </resources>

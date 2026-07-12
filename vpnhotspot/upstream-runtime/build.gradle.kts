@@ -89,9 +89,17 @@ plugins {
     alias(libs.plugins.wire)
 }
 
+apply(plugin = "org.jetbrains.kotlin.plugin.parcelize")
+
 android {
     namespace = "be.mygod.vpnhotspot"
     compileSdk = 37
+
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
+        }
+    }
 
     defaultConfig {
         minSdk = 26

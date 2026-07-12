@@ -22,6 +22,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven("https://jitpack.io")
+        mavenLocal()
 
         val seslUser = providers.gradleProperty("seslUser").orNull
         val seslToken = providers.gradleProperty("seslToken").orNull

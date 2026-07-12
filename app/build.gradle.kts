@@ -548,20 +548,6 @@ val generateRuStoreRecommendedAppsCache by tasks.registering {
 }
 
 configurations.configureEach {
-    exclude(group = "androidx.core", module = "core")
-    exclude(group = "androidx.core", module = "core-ktx")
-    exclude(group = "androidx.customview", module = "customview")
-    exclude(group = "androidx.coordinatorlayout", module = "coordinatorlayout")
-    exclude(group = "androidx.drawerlayout", module = "drawerlayout")
-    exclude(group = "androidx.viewpager2", module = "viewpager2")
-    exclude(group = "androidx.viewpager", module = "viewpager")
-    exclude(group = "androidx.appcompat", module = "appcompat")
-    exclude(group = "androidx.fragment", module = "fragment")
-    exclude(group = "androidx.preference", module = "preference")
-    exclude(group = "androidx.recyclerview", module = "recyclerview")
-    exclude(group = "androidx.slidingpanelayout", module = "slidingpanelayout")
-    exclude(group = "androidx.swiperefreshlayout", module = "swiperefreshlayout")
-    exclude(group = "com.google.android.material", module = "material")
     exclude(group = "sesl.androidx.picker", module = "picker-app")
     exclude(group = "sesl.androidx.picker", module = "picker-color")
 }
@@ -730,8 +716,7 @@ tasks.named("check") {
 
 dependencies {
     implementation(libs.kotlinx.coroutines.android)
-    implementation(libs.oneui.design)
-    implementation(libs.sesl.pickerBasic)
+    implementation("com.google.android.material:material:1.12.0")
     implementation(libs.protobuf.javalite)
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.tencent:mmkv:1.3.9")
@@ -743,7 +728,7 @@ dependencies {
     implementation(libs.dexkit)
     implementation(libs.livekit.android)
     implementation(project(":amneziawg-tunnel"))
-    implementation(files(generatedLibXrayAar))
+    implementation(files(rootProject.file("libXray.aar")))
     implementation(project(":vpnhotspot:bridge"))
     implementation(project(":vpnhotspot:sharing-bridge"))
     compileOnly(files("libs/xposed-api-82.jar"))
