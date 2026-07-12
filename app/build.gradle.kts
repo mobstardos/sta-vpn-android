@@ -135,10 +135,23 @@ fun resolveAndroidNdkDir(): File {
 
 fun resolveVkTurnAndroidClang(): File {
     val ndkDir: File = resolveAndroidNdkDir()
-    val prebuilt: File = ndkDir.resolve("toolchains/llvm/prebuilt/linux-x86_64/bin")
+    val hostTag: String = when {
+        org.gradle.internal.os.OperatingSystem.current().isWindows -> "windows-x86_64"
+        org.gradle.internal.os.OperatingSystem.current().isLinux -> "linux-x86_64"
+        org.gradle.internal.os.OperatingSystem.current().isMacOsX -> "darwin-x86_64"
+        else -> error("Unsupported OS")
+    }
+    val prebuilt: File = ndkDir.resolve("toolchains/llvm/prebuilt/${hostTag}/bin")
     val clang: File = prebuilt.resolve("aarch64-linux-android21-clang")
     return clang.takeIf { it.isFile }
         ?: error("Android clang not found at ${clang.absolutePath}")
+}
+
+fun resolvePrebuiltTag(): String = when {
+    org.gradle.internal.os.OperatingSystem.current().isWindows -> "windows-x86_64"
+    org.gradle.internal.os.OperatingSystem.current().isLinux -> "linux-x86_64"
+    org.gradle.internal.os.OperatingSystem.current().isMacOsX -> "darwin-x86_64"
+    else -> error("Unsupported OS")
 }
 
 fun resolveGoBinary(toolName: String): String {
@@ -379,7 +392,7 @@ val buildLibXrayAndroidAar: TaskProvider<Exec> by tasks.registering(Exec::class)
                     append(File.pathSeparator)
                     append(File(resolveAndroidSdkDir(), "tools/bin").absolutePath)
                     append(File.pathSeparator)
-                    append(File(resolveAndroidNdkDir(), "toolchains/llvm/prebuilt/linux-x86_64/bin").absolutePath)
+                    append(File(resolveAndroidNdkDir(), "toolchains/llvm/prebuilt/${resolvePrebuiltTag()}/bin").absolutePath)
                     append(File.pathSeparator)
                     append(libXrayGoBinDir.absolutePath)
                     append(File.pathSeparator)
